@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4D9D0;
+}
+header {
+    background-color: #921A40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px; /* Mengecilkan padding untuk membuat navbar lebih kecil */
+    display: block;
+    position: relative;
+    transition: 0.4s;
+    font-size: 14px; /* Mengurangi ukuran font */
+}
+
+nav ul li a::before, nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #C75B7A;
+    transition: width 0.4s;
+}
+
+nav ul li a::before {
+    top: 0;
+    left: 0;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    right: 0;
+}
+
+nav ul li a:hover::before, nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Efek ketika diklik */
+nav ul li a:active {
+    background-color: #C75B7A;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+.container {
+    max-width: 1200px; /* Maksimal lebar kontainer */
+    margin: 0 auto; /* Pusatkan kontainer */
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+/* Latar belakang putih untuk bagian intro */
+    border-radius: 10px; /* Sudut melengkung */
+    
+    position: relative; /* Untuk posisi elemen anak */
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: url('path_to_your_background_image.jpg'); /* Ganti dengan URL gambar latar belakang */
+    border-radius: 15px; /* Sudut melengkung untuk gambar latar belakang */
+    z-index: -1; /* Di belakang konten */
+}
+
+.intro .text-container {
+    max-width: 50%;
+    text-align: left;
+}
+
+.intro h2 {
+    font-size: 48px; /* Ukuran font lebih besar untuk menarik perhatian */
+    margin-bottom: 10px;
+    color: #C75B7A; /* Warna teks cerah untuk judul */
+}
+
+.intro h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #555; /* Warna teks lebih terang */
+}
+
+.intro .btn {
+    background-color: #C75B7A;
+    color: #fff;
+    padding: 12px 24px; /* Padding lebih besar untuk tombol */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi halus saat hover */
+}
+
+.intro .btn:hover {
+    background-color: #D9ABAB;
+    transform: translateY(-2px); /* Efek angkat saat hover*/
+}
+
+.contact-form-container {
+    width: 320px; /* Set a fixed width for the container */
+    margin-top: 60px; /* Atur posisi vertikal agar lebih dekat dengan intro */
+}
+
+.contact-form {
+    background-color: #D9ABAB; /* Background color for the form */
+    padding: 30px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus pada form */
+}
+
+.contact-form h1 {
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the heading text */
+}
+
+.criteria {
+    list-style-type: none; /* Remove bullet points from list */
+    padding-left: 0; /* Remove padding from list */
+}
+
+
+
+.criteria li {
+    margin-bottom: 15px; /* Space between list items */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.criteria li img {
+    width: 20px; /* Width of the icon larger for visibility */
+    height: auto; 
+}
+
+.contact-form button {
+    padding: 10px 20px; /* Padding inside the button lebih besar*/
+    background-color: #C75B7A; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; 
+    border:none;
+    
+   cursor:pointer;
+   width :100%;
+   text-align:center;
+   margin-top :20 px ;
+   transition :background-color .3s ease, transform .2s ease ; 
+}
+
+.contact-form button:hover {
+   background-color:#888585 ; 
+   transform :translateY(-2 px); 
+}

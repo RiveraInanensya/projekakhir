@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4D9D0;
+}
+
+header {
+    background-color: #921A40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    position: relative;
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+nav ul li a::before, nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #C75B7A;
+    transition: width 0.4s;
+}
+
+nav ul li a::before {
+    top: 0;
+    left: 0;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    right: 0;
+}
+
+nav ul li a:hover::before, nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:active {
+    background-color: #C75B7A;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+/* Detail Page Styling */
+.catalog-detail {
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.catalog-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.costume-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.costume-image img {
+    width: 60%; /* Ukuran gambar diperkecil */
+    max-width: 300px; /* Batas maksimum untuk gambar */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.costume-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.costume-info p {
+    margin: 5px 0;
+}
+
+.costume-detail {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.instagram-btn,
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+.instagram-btn:hover {
+    background-color: #921A40;
+    color: #FFF;
+}
+
+.btn:hover {
+    background-color: #921A40;
+}
