@@ -49,25 +49,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'user/home';
-$route['rentalan'] = 'rentalan/index';
-$route['bundle'] = 'user/bundle';
-$route['profil'] = 'auth';
-$route['edit_profile'] = 'edit/edit_profile';
-$route['update'] = 'update/edit_profile';
-$route['katalog'] = 'katalog/index';
-$route['tambah_katalog'] = 'katalog/tambah_katalog';
-$route['submit_katalog'] = 'katalog/submit_katalog';
-$route['katalog/detail/(:num)'] = 'katalog/detail/$1';
-
-$route['katalog/filter_ajax/(:any)'] = 'katalog/filter_ajax/$1';
-$route['edit_katalog'] = 'edit/edit_katalog';
-$route['my_katalog'] = 'katalog/my_katalog';
-
-$route['katalog/delete_katalog/(:num)'] = 'katalog/delete_katalog/$1';
-
-$route['katalog/update/(.+)'] = 'katalog/update/$1';
-$route['katalog/edit/(.+)'] = 'katalog/edit/$1';
-
+$route['default_controller'] = 'auth';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -72,7 +72,7 @@ class auth extends CI_Controller
     
     public function registration()
     {
-        $this->form_validation->set_rules('name', 'Name', 'required|trim');
+        $this->form_validation->set_rules('nama_lengkap', 'nama_lengkap', 'required|trim');
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
             'is_unique' => 'This email has already registered!'
         ]);
@@ -89,7 +89,7 @@ class auth extends CI_Controller
             $this->load->view('templates/auth_footer');
         } else {
             $data = [
-                'name' => htmlspecialchars($this->input->post('name', true)),
+                'nama_lengkap' => htmlspecialchars($this->input->post('nama_lengkap', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
